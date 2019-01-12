@@ -1,19 +1,27 @@
 <h1>Listing all articles</h1>
+
+  <% @articles.each do |article| %>
 <p>
-<%= link_to "Create new article", new_article_path %>
+  
 </p>
-<table>
- <tr>
-  <th>Title</th>
-  <th>Description</th>
- </tr>
- <% @articles.each do |article| %>
- <tr>
-  <td><%= article.title %></td>
-  <td><%= article.description %></td>
-  <td><%= link_to 'Edit', edit_article_path(article) %></td>
-  <td><%= link_to 'Show', article_path(article) %></td>
-  <td><%= link_to 'Delete', article_path(article), method: :delete, data: {confirm: "Are you sure?"} %></td>
- </tr>
+<div class="row">
+  <div class="col-md-6">
+    <p>
+   <h2><%= article.title %></h2>
+    </p>
+  <%= article.description %>
+  <p>
+  <%= link_to 'Edit', edit_article_path(article), class: "btn btn-xs btn-primary" %>
+  <%= link_to 'Show', article_path(article), class: "btn btn-xs btn-primary" %>
+  <%= link_to 'Delete', article_path(article), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-xs btn-danger" %>
+   </p>
+  </div>
+  <div class="col-md-6">
+  <%= image_tag article.picture_url, width: '100%' if article.picture.present? %>
+
+
+  </div>
+</div>
  <% end %>
-</table>
+
+     

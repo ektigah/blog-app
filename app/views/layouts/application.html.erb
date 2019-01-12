@@ -25,3 +25,945 @@
     <% end %>
   </body>
 </html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+  
+  
+  
+  
+<head >
+  
+      <title>Myblog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PastorMentor - Grow a Better, Bigger Church</title>
+
+		<style type="text/css">
+			.slide-excerpt { width: 30%; }
+			.slide-excerpt { top: 0; }
+			.slide-excerpt { left: 0; }
+			.flexslider { max-width: 1120px; max-height: 450px; }
+			.slide-image { max-height: 450px; }
+		</style><meta name="robots" content="noodp,noydir"/>
+<meta name="description" content="PastorMentor has practical, proven, comprehensive help that can make you the pastor of a growing church. From Dr. Hal Seed, church planter, lead pastor, author, and mentor, who knows what it is like to be a senior pastor in the trenches. He has seen over 20,000 people come to Christ since his church launched. PastorMentor. So you can reach more. Grow more."/>
+<link rel="canonical" href="https://www.pastormentor.com" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="PastorMentor - Grow a Better, Bigger Church" />
+<meta property="og:description" content="PastorMentor has practical, proven, comprehensive help that can make you the pastor of a growing church. From Dr. Hal Seed, church planter, lead pastor, author, and mentor, who knows what it is like to be a senior pastor in the trenches. He has seen over 20,000 people come to Christ since his church launched. PastorMentor. So you can reach more. Grow more." />
+<meta property="og:url" content="https://www.pastormentor.com" />
+<meta property="og:site_name" content="PastorMentor" />
+<script type="application/ld+json">{ "@context": "http://schema.org", "@type": "WebSite", "url": "https://www.pastormentor.com/", "potentialAction": { "@type": "SearchAction", "target": "https://www.pastormentor.com/?s={search_term}", "query-input": "required name=search_term" } }</script>
+<link rel='dns-prefetch' href='//www.pastormentor.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//code.ionicframework.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+
+            <script type="text/javascript">//<![CDATA[
+            
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            
+            ga('create', 'UA-23758258-1', 'auto');
+            ga('send', 'pageview'); 
+                        
+            //]]></script>
+					<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.pastormentor.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.7"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='genesis-simple-share-plugin-css-css'  href='//www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/css/share.min.css?ver=0.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='genesis-simple-share-genericons-css-css'  href='//www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/css/genericons.min.css?ver=0.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='digital-pro-css'  href='https://www.pastormentor.com/wp-content/themes/digital-pro/style.css?ver=1.0.3' type='text/css' media='all' />
+<style id='digital-pro-inline-css' type='text/css'>
+
+		button,
+		input[type="button"],
+		input[type="reset"],
+		input[type="submit"],
+		.archive-pagination li a:focus,
+		.archive-pagination li a:hover,
+		.archive-pagination .active a,
+		.button,
+		.entry-content a.button,
+		.footer-widgets-1,
+		.textwidget a.button {
+			background-color: #0070a8;
+		}
+
+		a:focus,
+		a:hover,
+		.archive-pagination li a:focus,
+		.archive-pagination li a:hover,
+		.archive-pagination .active a,
+		.home.front-page .widget a:focus,
+		.home.front-page .widget a:hover,
+		.pagination a:focus,
+		.pagination a:hover {
+				border-color: #0070a8;
+		}
+
+		a:focus,
+		a:hover,
+		button:hover,
+		button:focus,
+		.content .entry-title a:hover,
+		.content .entry-title a:focus,
+		.footer-widgets a:focus,
+		.footer-widgets a:hover,
+		.front-page .front-page-3 a:focus,
+		.front-page .front-page-3 a:hover,
+		.front-page .front-page-2 ul.checkmark li:before,
+		.genesis-nav-menu .current-menu-item > a,
+		.genesis-nav-menu a:focus,
+		.genesis-nav-menu a:hover,
+		.js nav button:focus,
+		.js .menu-toggle:focus,
+		.site-footer a:focus,
+		.site-footer a:hover {
+			color: #0070a8;
+		}
+		
+</style>
+<link rel='stylesheet' id='lms-quiz-front-end-style-css'  href='https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/lms-quiz-system/css/front-end.css?ver=4.8.7' type='text/css' media='all' />
+<link rel='stylesheet' id='bbp-default-css'  href='https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/bbpress/templates/default/css/bbpress.css?ver=2.5.13-6410' type='text/css' media='screen' />
+<link rel='stylesheet' id='affwp-forms-css'  href='https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/affiliate-wp/assets/css/forms.min.css?ver=2.1.15' type='text/css' media='all' />
+<link rel='stylesheet' id='lms-sidebar-reset-css-css'  href='https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/lms-navigation-widget/assets/css/reset.css?ver=2.3.4' type='text/css' media='all' />
+<link rel='stylesheet' id='lms-sidebar-css'  href='https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/lms-navigation-widget/assets/styles/default/css/lms-sidebar.css?ver=2.3.4' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='https://www.pastormentor.com/wp-includes/css/dashicons.min.css?ver=4.8.7' type='text/css' media='all' />
+<link rel='stylesheet' id='rainmaker-rmui-frontend-css'  href='https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/rainmaker-ui/dist/assets//css/rmui-frontend.min.css?ver=2.18.1' type='text/css' media='all' />
+<link rel='stylesheet' id='lms-style-css'  href='https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/rainmaker-lms/assets/css/lms-style.css?ver=2.18.1' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-css'  href='//fonts.googleapis.com/css?family=Lora%3A400%2C400italic%2C700%2C700italic%7CPoppins%3A400%2C500%2C600%2C700&#038;ver=1.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='ionicons-css'  href='//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css?ver=1.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='accesspress-checkout-css'  href='https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/accesspress/resources/checkout.css?ver=3.0-sprint-4-dev-1' type='text/css' media='all' />
+<link rel='stylesheet' id='bbpress-genesis-extend-css'  href='https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/bbpress-genesis-extend/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='simple-social-icons-font-css'  href='https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/simple-social-icons/css/style.css?ver=2.0.1' type='text/css' media='all' />
+<!--[if IE 9]>
+<link rel='stylesheet' id='digitalIE9-css'  href='https://www.pastormentor.com/wp-content/themes/digital-pro/style-ie9.css?ver=1.0.3' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='digital-front-styles-css'  href='https://www.pastormentor.com/wp-content/themes/digital-pro/style-front.css?ver=1.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='lms-minimalist-style-css'  href='https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/lms-look-and-feel/templates/minimalist/style.css?ver=2.18.1' type='text/css' media='all' />
+<style id='lms-minimalist-style-inline-css' type='text/css'>
+/*-- LMS Dashboard --*/
+
+/* Colors */
+.site-container ul.lms-dashboard li a {
+	color: #333333;
+}
+
+.site-container ul.lms-dashboard li h3 a:hover,
+.site-container ul.lms-dashboard li .description a:hover {
+	color: #689980;
+}
+
+.site-container ul.lms-dashboard li .button {
+	background: #689980;
+}
+
+.site-container ul.lms-dashboard li .description {
+	color: #333333;
+}
+
+/*-- LMS Navigation --*/
+
+/* Colors */
+.site-container ul.lms-list-items .courseware-course > a,
+.site-container ul.lms-list-items .courseware-module > a,
+.site-container ul.lms-list-items .courseware-lesson > a {
+    color: #333333;
+}
+
+.site-container ul.lms-list-items .courseware-course > a:hover,
+.site-container ul.lms-list-items .courseware-course > a:focus,
+.site-container ul.lms-list-items .courseware-module > a:hover,
+.site-container ul.lms-list-items .courseware-module > a:focus,
+.site-container ul.lms-list-items .courseware-lesson > a:hover,
+.site-container ul.lms-list-items .courseware-lesson > a:focus,
+.site-container ul.lms-list-items .courseware-lesson.current_courseware_item > a,
+.site-container ul.lms-list-items .courseware-module.current_courseware_item > a,
+.site-container .lms-sidebar-nav ul.lms-list-items .courseware-module.current_courseware_item > a {
+    color: #689980;
+}
+
+/*-- LMS Buttons --*/
+
+.site-container input.rainmaker-lms-favorite,
+.site-container input.rainmaker-lms-favorite:disabled,
+.site-container input.rainmaker-lms-complete,
+.site-container input.rainmaker-lms-complete:disabled,
+.site-container .lms-media-content a.button,
+.site-container .lms-media-content a.button:hover,
+.site-container .lms-next-previous a {
+	background: #689980;
+	border-color: #689980;
+}
+</style>
+<link rel='stylesheet' id='genesis-tabs-stylesheet-css'  href='https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-tabs/style.css?ver=4.8.7' type='text/css' media='all' />
+<link rel='stylesheet' id='slider_styles-css'  href='https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-responsive-slider/style.css?ver=0.9.5' type='text/css' media='all' />
+<script type='text/javascript' src='//www.pastormentor.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/jquery.sharrre.min.js?ver=0.1.0'></script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/waypoints.min.js?ver=0.1.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ajax_object = {"ajax_url":"https:\/\/www.pastormentor.com\/admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-content/mu-plugins/synthesis/library/lms-quiz-system/js/front-end.js?ver=4.8.7'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var affwp_scripts = {"ajaxurl":"https:\/\/www.pastormentor.com\/admin\/admin-ajax.php"};
+var jQueryCookieOpts = {"path":"\/","domain":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-content/mu-plugins/synthesis/library/rainmaker-ui/dist/assets//js/jquery.cookie.min.js?ver=2.18.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var affwp_debug_vars = {"integrations":[],"version":"2.1.15","currency":"USD"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-content/mu-plugins/synthesis/library/affiliate-wp/assets/js/tracking.min.js?ver=2.1.15'></script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-content/mu-plugins/synthesis/library/rainmaker-ui/dist/assets//js/jquery.fitvids.min.js?ver=2.18.1'></script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-content/mu-plugins/synthesis/library/rainmaker-ui/dist/assets//js/rmui.fitvids.min.js?ver=2.18.1'></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='//www.pastormentor.com/wp-content/themes/genesis/lib/js/html5shiv.min.js?ver=3.7.3'></script>
+<![endif]-->
+<script type='text/javascript' src='//www.pastormentor.com/wp-content/mu-plugins/synthesis/library/accesspress/resources/checkout-form.js?ver=3.0-sprint-4-dev-1'></script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-content/mu-plugins/synthesis/library/simple-social-icons/svgxuse.js?ver=1.1.21'></script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-content/themes/digital-pro/js/front-page.js?ver=1.0.3'></script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-content/themes/digital-pro/js/backstretch.js?ver=1.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var BackStretchImg = {"src":"https:\/\/www.pastormentor.com\/wp-content\/uploads\/2018\/06\/pastor-mentor-hal-seed.jpg"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-content/themes/digital-pro/js/backstretch-set.js?ver=1.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ss_podcasting_scripts = {"ajaxurl":"https:\/\/www.pastormentor.com\/admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-content/mu-plugins/synthesis/library/rainmaker-simple-podcasting/assets/js/player.js?ver=2.18.1'></script>
+<link rel='https://api.w.org/' href='https://www.pastormentor.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.pastormentor.com/xmlrpc.php?rsd" />
+<link rel="stylesheet" href="https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/cookies-for-comments/css.php?k=f48c2f5b7fb4ca0f7896273f55e079a2&amp;t=1993937360" type="text/css" media="screen" />		<script type="text/javascript">
+		var AFFWP = AFFWP || {};
+		AFFWP.referral_var = 'ref';
+		AFFWP.expiration = 1;
+		AFFWP.debug = 0;
+
+
+		AFFWP.referral_credit_last = 0;
+		</script>
+<style type="text/css">.site-title a { background: url(https://www.pastormentor.com/wp-content/uploads/2016/04/Untitleddesign-5.jpg) no-repeat !important; }</style>
+<!--header scripts--><meta name="google-site-verification" content="YdQgMEOeX-XiSmkUJOFxyEBrEClrX5KEbxZws-IX2vI" /><!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '711202202356785');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=711202202356785&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code --><link rel="Shortcut Icon" href="//www.pastormentor.com/wp-content/mu-plugins/synthesis/library/rainmaker-favicon-uploader/lib/images/favicon.ico" type="image/x-icon" />
+<style type="text/css" media="screen"> .simple-social-icons ul li a, .simple-social-icons ul li a:hover, .simple-social-icons ul li a:focus { background-color: #0070a8 !important; border-radius: 3px; color: #000000 !important; border: 1px #ffffff solid !important; font-size: 12px; padding: 6px; }  .simple-social-icons ul li a:hover, .simple-social-icons ul li a:focus { background-color: #64c9ea !important; border-color: #ffffff !important; color: #000000 !important; }  .simple-social-icons ul li a:focus { outline: 1px dotted #64c9ea !important; }</style>
+	<link rel="stylesheet" type="text/css" href="//www.pastormentor.com?custom-css=1&#038;csblog=1&#038;cscache=5&#038;csrev=107" />
+</head>
+<body class="home blog digital-pro custom-header header-image header-full-width full-width-content front-page" itemscope itemtype="https://schema.org/WebPage">
+  
+  <%= render 'layouts/navigation' %>
+    <%= render 'layouts/messages' %>
+    <div class="container">
+      <%= yield %>
+    </div>
+    <%= render 'layouts/footer' %>
+    <%= debug(params) if Rails.env.development? %>
+    
+    <% flash.each do |name, msg| %>
+    <ul>
+     <li><%= msg %></li>
+    </ul>
+    <% end %>
+  
+  
+  
+  
+  <div class="site-container"><ul class="genesis-skip-link"><li><a href="#genesis-content" class="screen-reader-shortcut"> Skip to content</a></li><li><a href="#genesis-footer-widgets" class="screen-reader-shortcut"> Skip to footer</a></li></ul><header class="site-header" itemscope itemtype="https://schema.org/WPHeader"><div class="wrap"><div class="title-area"><h1 class="site-title" itemprop="headline"><a href="https://www.pastormentor.com/">PastorMentor</a></h1><p class="site-description" itemprop="description">How to Grow a Better, Bigger Church</p></div><nav class="nav-primary" aria-label="Main" itemscope itemtype="https://schema.org/SiteNavigationElement" id="genesis-nav-primary"><div class="wrap"><ul id="menu-main" class="menu genesis-nav-menu menu-primary js-superfish"><li id="menu-item-17066" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-17066"><a href="https://www.pastormentor.com/" itemprop="url"><span itemprop="name">Home</span></a></li>
+<li id="menu-item-10530" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10530"><a href="https://www.pastormentor.com/start-here/" itemprop="url"><span itemprop="name">Start Here</span></a></li>
+<li id="menu-item-5544" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-5544"><a href="https://www.pastormentor.com/blog/" itemprop="url"><span itemprop="name">Blog</span></a></li>
+<li id="menu-item-20613" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20613"><a href="https://www.pastormentor.com/church-campaigns/" itemprop="url"><span itemprop="name">Church Campaigns</span></a></li>
+<li id="menu-item-20614" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20614"><a href="https://www.pastormentor.com/books-hal-seed/" itemprop="url"><span itemprop="name">Books</span></a></li>
+<li id="menu-item-20612" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20612"><a href="https://www.pastormentor.com/healthy-church-systems-ebooks-2/" itemprop="url"><span itemprop="name">Ebooks</span></a></li>
+<li id="menu-item-17067" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-17067"><a href="https://www.pastormentor.com/login/" itemprop="url"><span itemprop="name">Login</span></a>
+<ul  class="sub-menu">
+	<li id="menu-item-21778" class="menu-item menu-item-type-post_type menu-item-object-lms_courseware menu-item-21778"><a href="https://www.pastormentor.com/churchengines/" itemprop="url"><span itemprop="name">Pastors</span></a></li>
+	<li id="menu-item-21777" class="menu-item menu-item-type-post_type menu-item-object-lms_courseware menu-item-21777"><a href="https://www.pastormentor.com/churchengines-video-series/" itemprop="url"><span itemprop="name">Association Leaders</span></a></li>
+</ul>
+</li>
+</ul></div></nav></div></header><h2 class="screen-reader-text">Main Content</h2><div id="front-page-1" class="front-page-1"><div class="widget-area fadeup-effect"><div class="wrap"><section id="custom_html-3" class="widget_text widget widget_custom_html"><div class="widget_text widget-wrap"><h3 class="widgettitle widget-title">The How-to for Pastors</h3>
+<div class="textwidget custom-html-widget"><h3>  So you can reach more. Grow more.</h3>
+
+<a class="button" href="https://www.pastormentor.com/start-here/">Get Started</a></div></div></section>
+</div></div></div><div id="front-page-3" class="front-page-3"><div class="wrap"><div class="flexible-widgets widget-area fadeup-effect widget-thirds"><section id="text-31" class="widget widget_text"><div class="widget-wrap">			<div class="textwidget"><h4>Show Me How To...</h4></div>
+		</div></section>
+<section id="custom_html-21" class="widget_text widget widget_custom_html"><div class="widget_text widget-wrap"><div class="textwidget custom-html-widget"><i class="icon ion-ios-paper-outline" aria-hidden="true"></i>
+<h4>Evaluate my Church</h4>
+<a class="button small" href="https://www.pastormentor.com/need-help-evaluate-church//">Learn How</a></div></div></section>
+<section id="custom_html-22" class="widget_text widget widget_custom_html"><div class="widget_text widget-wrap"><div class="textwidget custom-html-widget"><i class="icon ion-map" aria-hidden="true"></i>
+<h4>Do Outreach and Evangelism</h4>
+<a class="button small" href="https://www.pastormentor.com/outreach-evangelism/">See More</a></div></div></section>
+<section id="custom_html-7" class="widget_text widget widget_custom_html"><div class="widget_text widget-wrap"><div class="textwidget custom-html-widget"><i class="icon ion-gear-b" aria-hidden="true"></i>
+<h4>Improve our Systems</h4>
+<a class="button small" href="https://www.pastormentor.com/healthy-church-systems-ebooks-2/">Find Out How</a></div></div></section>
+</div></div></div><div class="site-inner"><div class="content-sidebar-wrap"><main class="content" id="genesis-content"><div id="journal" class="widget-area fadeup-effect"><div class="wrap"><h2 class="widgettitle widget-title center">Recent Articles</h2><article class="post-23208 post type-post status-publish format-standard has-post-thumbnail category-move-forward category-see-church-growth tag-church-growth-ideas tag-church-t-shirts tag-i-love-my-church tag-prayer-for-my-church tag-wow-weekends entry" itemscope itemtype="https://schema.org/CreativeWork"><a class="entry-image-link" href="https://www.pastormentor.com/build-momentum-winter/" aria-hidden="true"><img width="506" height="253" src="https://www.pastormentor.com/wp-content/uploads/2019/01/snowboarding-25981761280-506x253.jpg" class="alignright post-image entry-image" alt="How to Build Momentum in your Church in the Dead of Winter" itemprop="image" /></a><header class="entry-header"><p class="entry-meta"><span class="entry-author" itemprop="author" itemscope itemtype="https://schema.org/Person"><a href="https://www.pastormentor.com/author/hal-seed/" class="entry-author-link" itemprop="url" rel="author"><span class="entry-author-name" itemprop="name">Hal Seed</span></a></span> </p><h2 class="entry-title" itemprop="headline"><a class="entry-title-link" rel="bookmark" href="https://www.pastormentor.com/build-momentum-winter/">How to Build Momentum in your Church in the Dead of Winter</a></h2>
+</header><div class="entry-content" itemprop="text"><div class="share-before share-outlined share-medium" id="share-before-23208"><div class="facebook" id="facebook-before-23208" data-url="https://www.pastormentor.com/build-momentum-winter/" data-urlalt="https://www.pastormentor.com/?p=23208" data-text="How to Build Momentum in your Church in the Dead of Winter" data-title="Share" data-reader="Share on Facebook" data-count="%s shares on Facebook"></div><div class="twitter" id="twitter-before-23208" data-url="https://www.pastormentor.com/build-momentum-winter/" data-urlalt="https://www.pastormentor.com/?p=23208" data-text="How to Build Momentum in your Church in the Dead of Winter" data-title="Tweet" data-reader="Tweet this" data-count="%s Tweets"></div><div class="linkedin" id="linkedin-before-23208" data-url="https://www.pastormentor.com/build-momentum-winter/" data-urlalt="https://www.pastormentor.com/?p=23208" data-text="How to Build Momentum in your Church in the Dead of Winter" data-title="Share" data-reader="Share on LinkedIn" data-count="%s shares on LinkedIn"></div></div>
+			<script type='text/javascript'>
+				jQuery(document).ready(function($) {
+					if ( $.fn.waypoint ) {
+										$("#facebook-before-23208").waypoint( function() {
+										$("#facebook-before-23208").sharrre({
+										  share: {
+										    facebook: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("facebook");
+										  }
+										});
+										},
+										{ offset: "bottom-in-view" });
+									} else {
+										$("#facebook-before-23208").sharrre({
+										  share: {
+										    facebook: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("facebook");
+										  }
+										});
+									}
+if ( $.fn.waypoint ) {
+										$("#twitter-before-23208").waypoint( function() {
+										$("#twitter-before-23208").sharrre({
+										  share: {
+										    twitter: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("twitter");
+										  }
+										});
+										},
+										{ offset: "bottom-in-view" });
+									} else {
+										$("#twitter-before-23208").sharrre({
+										  share: {
+										    twitter: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("twitter");
+										  }
+										});
+									}
+if ( $.fn.waypoint ) {
+										$("#linkedin-before-23208").waypoint( function() {
+										$("#linkedin-before-23208").sharrre({
+										  share: {
+										    linkedin: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("linkedin");
+										  }
+										});
+										},
+										{ offset: "bottom-in-view" });
+									} else {
+										$("#linkedin-before-23208").sharrre({
+										  share: {
+										    linkedin: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("linkedin");
+										  }
+										});
+									}
+
+				});
+		</script><p>Wondering how you can see an explosion of life and health in your church this winter? Make a way for the people in your church to grow and to invite their friends and, to your mild surprise, they will. You can see new excitement in the lobby and in the pews. Would you like to [&hellip;]</p>
+</div></article><article class="post-22845 post type-post status-publish format-standard has-post-thumbnail category-hold-church-campaign tag-church-campaign tag-rick-warren entry" itemscope itemtype="https://schema.org/CreativeWork"><a class="entry-image-link" href="https://www.pastormentor.com/capture-growth-campaign/" aria-hidden="true"><img width="506" height="253" src="https://www.pastormentor.com/wp-content/uploads/2018/11/church-campaign-celebration-506x253.jpg" class="alignright post-image entry-image" alt="How to Capture Growth and Momentum from a Church Campaign" itemprop="image" /></a><header class="entry-header"><p class="entry-meta"><span class="entry-author" itemprop="author" itemscope itemtype="https://schema.org/Person"><a href="https://www.pastormentor.com/author/hal-seed/" class="entry-author-link" itemprop="url" rel="author"><span class="entry-author-name" itemprop="name">Hal Seed</span></a></span> </p><h2 class="entry-title" itemprop="headline"><a class="entry-title-link" rel="bookmark" href="https://www.pastormentor.com/capture-growth-campaign/">How to Capture Growth and Momentum from a Church Campaign</a></h2>
+</header><div class="entry-content" itemprop="text"><div class="share-before share-outlined share-medium" id="share-before-22845"><div class="facebook" id="facebook-before-22845" data-url="https://www.pastormentor.com/capture-growth-campaign/" data-urlalt="https://www.pastormentor.com/?p=22845" data-text="How to Capture Growth and Momentum from a Church Campaign" data-title="Share" data-reader="Share on Facebook" data-count="%s shares on Facebook"></div><div class="twitter" id="twitter-before-22845" data-url="https://www.pastormentor.com/capture-growth-campaign/" data-urlalt="https://www.pastormentor.com/?p=22845" data-text="How to Capture Growth and Momentum from a Church Campaign" data-title="Tweet" data-reader="Tweet this" data-count="%s Tweets"></div><div class="linkedin" id="linkedin-before-22845" data-url="https://www.pastormentor.com/capture-growth-campaign/" data-urlalt="https://www.pastormentor.com/?p=22845" data-text="How to Capture Growth and Momentum from a Church Campaign" data-title="Share" data-reader="Share on LinkedIn" data-count="%s shares on LinkedIn"></div></div>
+			<script type='text/javascript'>
+				jQuery(document).ready(function($) {
+					if ( $.fn.waypoint ) {
+										$("#facebook-before-22845").waypoint( function() {
+										$("#facebook-before-22845").sharrre({
+										  share: {
+										    facebook: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("facebook");
+										  }
+										});
+										},
+										{ offset: "bottom-in-view" });
+									} else {
+										$("#facebook-before-22845").sharrre({
+										  share: {
+										    facebook: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("facebook");
+										  }
+										});
+									}
+if ( $.fn.waypoint ) {
+										$("#twitter-before-22845").waypoint( function() {
+										$("#twitter-before-22845").sharrre({
+										  share: {
+										    twitter: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("twitter");
+										  }
+										});
+										},
+										{ offset: "bottom-in-view" });
+									} else {
+										$("#twitter-before-22845").sharrre({
+										  share: {
+										    twitter: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("twitter");
+										  }
+										});
+									}
+if ( $.fn.waypoint ) {
+										$("#linkedin-before-22845").waypoint( function() {
+										$("#linkedin-before-22845").sharrre({
+										  share: {
+										    linkedin: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("linkedin");
+										  }
+										});
+										},
+										{ offset: "bottom-in-view" });
+									} else {
+										$("#linkedin-before-22845").sharrre({
+										  share: {
+										    linkedin: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("linkedin");
+										  }
+										});
+									}
+
+				});
+		</script><p>Your church-wide campaign can capture growth and bring lasting momentum. I know it feels risky to have a church campaign. You go to all the trouble to choose a campaign, get small group leaders on board, persuade your church members to buy the individual study guides. And what if nothing happens. I understand your concern. [&hellip;]</p>
+</div></article><article class="post-22657 post type-post status-publish format-standard has-post-thumbnail category-be-better-leader entry" itemscope itemtype="https://schema.org/CreativeWork"><a class="entry-image-link" href="https://www.pastormentor.com/lead-your-church/" aria-hidden="true"><img width="506" height="253" src="https://www.pastormentor.com/wp-content/uploads/2018/10/lead-from-stool-506x253.jpg" class="alignright post-image entry-image" alt="Do you Know how to Lead your Church from a Stool?" itemprop="image" /></a><header class="entry-header"><p class="entry-meta"><span class="entry-author" itemprop="author" itemscope itemtype="https://schema.org/Person"><a href="https://www.pastormentor.com/author/hal-seed/" class="entry-author-link" itemprop="url" rel="author"><span class="entry-author-name" itemprop="name">Hal Seed</span></a></span> </p><h2 class="entry-title" itemprop="headline"><a class="entry-title-link" rel="bookmark" href="https://www.pastormentor.com/lead-your-church/">Do you Know how to Lead your Church from a Stool?</a></h2>
+</header><div class="entry-content" itemprop="text"><div class="share-before share-outlined share-medium" id="share-before-22657"><div class="facebook" id="facebook-before-22657" data-url="https://www.pastormentor.com/lead-your-church/" data-urlalt="https://www.pastormentor.com/?p=22657" data-text="Do you Know how to Lead your Church from a Stool?" data-title="Share" data-reader="Share on Facebook" data-count="%s shares on Facebook"></div><div class="twitter" id="twitter-before-22657" data-url="https://www.pastormentor.com/lead-your-church/" data-urlalt="https://www.pastormentor.com/?p=22657" data-text="Do you Know how to Lead your Church from a Stool?" data-title="Tweet" data-reader="Tweet this" data-count="%s Tweets"></div><div class="linkedin" id="linkedin-before-22657" data-url="https://www.pastormentor.com/lead-your-church/" data-urlalt="https://www.pastormentor.com/?p=22657" data-text="Do you Know how to Lead your Church from a Stool?" data-title="Share" data-reader="Share on LinkedIn" data-count="%s shares on LinkedIn"></div></div>
+			<script type='text/javascript'>
+				jQuery(document).ready(function($) {
+					if ( $.fn.waypoint ) {
+										$("#facebook-before-22657").waypoint( function() {
+										$("#facebook-before-22657").sharrre({
+										  share: {
+										    facebook: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("facebook");
+										  }
+										});
+										},
+										{ offset: "bottom-in-view" });
+									} else {
+										$("#facebook-before-22657").sharrre({
+										  share: {
+										    facebook: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("facebook");
+										  }
+										});
+									}
+if ( $.fn.waypoint ) {
+										$("#twitter-before-22657").waypoint( function() {
+										$("#twitter-before-22657").sharrre({
+										  share: {
+										    twitter: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("twitter");
+										  }
+										});
+										},
+										{ offset: "bottom-in-view" });
+									} else {
+										$("#twitter-before-22657").sharrre({
+										  share: {
+										    twitter: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("twitter");
+										  }
+										});
+									}
+if ( $.fn.waypoint ) {
+										$("#linkedin-before-22657").waypoint( function() {
+										$("#linkedin-before-22657").sharrre({
+										  share: {
+										    linkedin: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("linkedin");
+										  }
+										});
+										},
+										{ offset: "bottom-in-view" });
+									} else {
+										$("#linkedin-before-22657").sharrre({
+										  share: {
+										    linkedin: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("linkedin");
+										  }
+										});
+									}
+
+				});
+		</script><p>Here&#8217;s how to lead your church better without breaking a sweat. I&#8217;ve been using a new leadership hack lately. It might work for you, too. I&#8217;m leading from a stool on Sunday mornings. It&#8217;s simple, but powerful. Read on to see how you can lead your church more easily and effectively perched on a stool [&hellip;]</p>
+</div></article><article class="post-22699 post type-post status-publish format-standard has-post-thumbnail category-conference-learnings tag-100-fastest-growing-churches tag-ed-stetzer tag-outreach-summit tag-ron-edmondson tag-warren-bird entry" itemscope itemtype="https://schema.org/CreativeWork"><a class="entry-image-link" href="https://www.pastormentor.com/fastest-growing-churches/" aria-hidden="true"><img width="506" height="253" src="https://www.pastormentor.com/wp-content/uploads/2018/10/OutreachSummit2018-506x253.png" class="alignright post-image entry-image" alt="Get the Best Ideas from America&#8217;s Fastest Growing Churches" itemprop="image" srcset="https://www.pastormentor.com/wp-content/uploads/2018/10/OutreachSummit2018-506x253.png 506w, https://www.pastormentor.com/wp-content/uploads/2018/10/OutreachSummit2018-300x150.png 300w, https://www.pastormentor.com/wp-content/uploads/2018/10/OutreachSummit2018-768x384.png 768w, https://www.pastormentor.com/wp-content/uploads/2018/10/OutreachSummit2018-1024x512.png 1024w, https://www.pastormentor.com/wp-content/uploads/2018/10/OutreachSummit2018-504x252.png 504w, https://www.pastormentor.com/wp-content/uploads/2018/10/OutreachSummit2018-200x100.png 200w, https://www.pastormentor.com/wp-content/uploads/2018/10/OutreachSummit2018.png 1436w" sizes="(max-width: 506px) 100vw, 506px" /></a><header class="entry-header"><p class="entry-meta"><span class="entry-author" itemprop="author" itemscope itemtype="https://schema.org/Person"><a href="https://www.pastormentor.com/author/hal-seed/" class="entry-author-link" itemprop="url" rel="author"><span class="entry-author-name" itemprop="name">Hal Seed</span></a></span> </p><h2 class="entry-title" itemprop="headline"><a class="entry-title-link" rel="bookmark" href="https://www.pastormentor.com/fastest-growing-churches/">Get the Best Ideas from America&#8217;s Fastest Growing Churches</a></h2>
+</header><div class="entry-content" itemprop="text"><div class="share-before share-outlined share-medium" id="share-before-22699"><div class="facebook" id="facebook-before-22699" data-url="https://www.pastormentor.com/fastest-growing-churches/" data-urlalt="https://www.pastormentor.com/?p=22699" data-text="Get the Best Ideas from America&#8217;s Fastest Growing Churches" data-title="Share" data-reader="Share on Facebook" data-count="%s shares on Facebook"></div><div class="twitter" id="twitter-before-22699" data-url="https://www.pastormentor.com/fastest-growing-churches/" data-urlalt="https://www.pastormentor.com/?p=22699" data-text="Get the Best Ideas from America&#8217;s Fastest Growing Churches" data-title="Tweet" data-reader="Tweet this" data-count="%s Tweets"></div><div class="linkedin" id="linkedin-before-22699" data-url="https://www.pastormentor.com/fastest-growing-churches/" data-urlalt="https://www.pastormentor.com/?p=22699" data-text="Get the Best Ideas from America&#8217;s Fastest Growing Churches" data-title="Share" data-reader="Share on LinkedIn" data-count="%s shares on LinkedIn"></div></div>
+			<script type='text/javascript'>
+				jQuery(document).ready(function($) {
+					if ( $.fn.waypoint ) {
+										$("#facebook-before-22699").waypoint( function() {
+										$("#facebook-before-22699").sharrre({
+										  share: {
+										    facebook: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("facebook");
+										  }
+										});
+										},
+										{ offset: "bottom-in-view" });
+									} else {
+										$("#facebook-before-22699").sharrre({
+										  share: {
+										    facebook: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("facebook");
+										  }
+										});
+									}
+if ( $.fn.waypoint ) {
+										$("#twitter-before-22699").waypoint( function() {
+										$("#twitter-before-22699").sharrre({
+										  share: {
+										    twitter: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("twitter");
+										  }
+										});
+										},
+										{ offset: "bottom-in-view" });
+									} else {
+										$("#twitter-before-22699").sharrre({
+										  share: {
+										    twitter: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("twitter");
+										  }
+										});
+									}
+if ( $.fn.waypoint ) {
+										$("#linkedin-before-22699").waypoint( function() {
+										$("#linkedin-before-22699").sharrre({
+										  share: {
+										    linkedin: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("linkedin");
+										  }
+										});
+										},
+										{ offset: "bottom-in-view" });
+									} else {
+										$("#linkedin-before-22699").sharrre({
+										  share: {
+										    linkedin: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("linkedin");
+										  }
+										});
+									}
+
+				});
+		</script><p>Here&#8217;s a conference that will change your church&#8217;s outreach, evangelism and discipleship mojo. I went to the Outreach Summit 2018 last week, and found it refreshingly different. It&#8217;s a conference that is part think tank, part mastermind, and part TED talks over new ideas and best practices from churches who make the Outreach 100 List [&hellip;]</p>
+</div></article><article class="post-22588 post type-post status-publish format-standard has-post-thumbnail category-attract-newcomers tag-dan-gordon tag-high-profile-speaker tag-special-guest entry" itemscope itemtype="https://schema.org/CreativeWork"><a class="entry-image-link" href="https://www.pastormentor.com/church-guest-speaker/" aria-hidden="true"><img width="506" height="253" src="https://www.pastormentor.com/wp-content/uploads/2017/04/lightstock418698smalllori-506x253.jpg" class="alignright post-image entry-image" alt="9 Big Ways to Make the Most of a Church Guest Speaker" itemprop="image" /></a><header class="entry-header"><p class="entry-meta"><span class="entry-author" itemprop="author" itemscope itemtype="https://schema.org/Person"><a href="https://www.pastormentor.com/author/hal-seed/" class="entry-author-link" itemprop="url" rel="author"><span class="entry-author-name" itemprop="name">Hal Seed</span></a></span> </p><h2 class="entry-title" itemprop="headline"><a class="entry-title-link" rel="bookmark" href="https://www.pastormentor.com/church-guest-speaker/">9 Big Ways to Make the Most of a Church Guest Speaker</a></h2>
+</header><div class="entry-content" itemprop="text"><div class="share-before share-outlined share-medium" id="share-before-22588"><div class="facebook" id="facebook-before-22588" data-url="https://www.pastormentor.com/church-guest-speaker/" data-urlalt="https://www.pastormentor.com/?p=22588" data-text="9 Big Ways to Make the Most of a Church Guest Speaker" data-title="Share" data-reader="Share on Facebook" data-count="%s shares on Facebook"></div><div class="twitter" id="twitter-before-22588" data-url="https://www.pastormentor.com/church-guest-speaker/" data-urlalt="https://www.pastormentor.com/?p=22588" data-text="9 Big Ways to Make the Most of a Church Guest Speaker" data-title="Tweet" data-reader="Tweet this" data-count="%s Tweets"></div><div class="linkedin" id="linkedin-before-22588" data-url="https://www.pastormentor.com/church-guest-speaker/" data-urlalt="https://www.pastormentor.com/?p=22588" data-text="9 Big Ways to Make the Most of a Church Guest Speaker" data-title="Share" data-reader="Share on LinkedIn" data-count="%s shares on LinkedIn"></div></div>
+			<script type='text/javascript'>
+				jQuery(document).ready(function($) {
+					if ( $.fn.waypoint ) {
+										$("#facebook-before-22588").waypoint( function() {
+										$("#facebook-before-22588").sharrre({
+										  share: {
+										    facebook: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("facebook");
+										  }
+										});
+										},
+										{ offset: "bottom-in-view" });
+									} else {
+										$("#facebook-before-22588").sharrre({
+										  share: {
+										    facebook: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("facebook");
+										  }
+										});
+									}
+if ( $.fn.waypoint ) {
+										$("#twitter-before-22588").waypoint( function() {
+										$("#twitter-before-22588").sharrre({
+										  share: {
+										    twitter: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("twitter");
+										  }
+										});
+										},
+										{ offset: "bottom-in-view" });
+									} else {
+										$("#twitter-before-22588").sharrre({
+										  share: {
+										    twitter: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("twitter");
+										  }
+										});
+									}
+if ( $.fn.waypoint ) {
+										$("#linkedin-before-22588").waypoint( function() {
+										$("#linkedin-before-22588").sharrre({
+										  share: {
+										    linkedin: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("linkedin");
+										  }
+										});
+										},
+										{ offset: "bottom-in-view" });
+									} else {
+										$("#linkedin-before-22588").sharrre({
+										  share: {
+										    linkedin: true
+										  },
+										  urlCurl: "https://www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-simple-share/lib/assets/js/sharrre/sharrre.php",
+										  enableHover: false,
+										  enableTracking: true,
+										  disableCount: true,
+										  buttons: {  },
+										  click: function(api, options){
+										    api.simulateClick();
+										    api.openPopup("linkedin");
+										  }
+										});
+									}
+
+				});
+		</script><p>Guest speakers should be part of your regular strategy for growing your church. It&#8217;s like inviting people to a football game, or over to dinner, or to a party. There&#8217;s a specific time and a specific reason for people to come. Going to church any weekend lacks that specific umpf for newcomers to get in [&hellip;]</p>
+</div></article><div class="archive-pagination pagination"><div class="pagination-next alignright"><a href="https://www.pastormentor.com/page/2/" >Next Page &#x000BB;</a></div></div></div></div></main></div></div><div class="footer-widgets" id="genesis-footer-widgets"><h2 class="genesis-sidebar-title screen-reader-text">Footer</h2><div class="wrap"><div class="widget-area footer-widgets-1 footer-widget-area"><section id="custom_html-8" class="widget_text widget widget_custom_html"><div class="widget_text widget-wrap"><h3 class="widgettitle widget-title">Here&#8217;s How to Grow a Better, Bigger Church.</h3>
+<div class="textwidget custom-html-widget">You want to be good at what you do. For God's glory. And for your satisfaction. Here's the practical, proven, comprehensive how-to that can help you become the pastor of a growing church.<br>
+
+&nbsp;
+<a class="button small" href="https://www.pastormentor.com/start-here/">Get Started</a></div></div></section>
+</div><div class="widget-area footer-widgets-2 footer-widget-area"><section id="custom_html-9" class="widget_text widget widget_custom_html"><div class="widget_text widget-wrap"><h3 class="widgettitle widget-title">Pastor Mentor Store</h3>
+<div class="textwidget custom-html-widget"><a href="https://www.pastormentor.com/churchengines-info/">Church Engines</a><br><p style="text-align: left;">
+<a href="https://www.pastormentor.com/master-classes/">Master Classes</a><br>
+<a href="https://www.pastormentor.com/church-campaigns/">Church Campaigns</a><br>
+<a href="https://www.pastormentor.com/books-hal-seed/">Books</a><br>
+<a href="https://www.pastormentor.com/healthy-church-systems-ebooks-2/">Ebooks</a><br>
+<a href="https://www.pastormentor.com/kindle-deals-pastors/">Kindle Deals for Pastors</a><br></div></div></section>
+<section id="custom_html-15" class="widget_text widget widget_custom_html"><div class="widget_text widget-wrap"><div class="textwidget custom-html-widget"></div></div></section>
+<section id="custom_html-16" class="widget_text widget widget_custom_html"><div class="widget_text widget-wrap"><div class="textwidget custom-html-widget"></div></div></section>
+<section id="custom_html-17" class="widget_text widget widget_custom_html"><div class="widget_text widget-wrap"><div class="textwidget custom-html-widget"></div></div></section>
+<section id="search-7" class="widget widget_search"><div class="widget-wrap"><h3 class="widgettitle widget-title">Search this Site</h3>
+<form class="search-form" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction" method="get" action="https://www.pastormentor.com/" role="search"><meta itemprop="target" content="https://www.pastormentor.com/?s={s}"/><label class="search-form-label screen-reader-text" for="searchform-5c39e78d857ac6.22803807">Search this website</label><input itemprop="query-input" type="search" name="s" id="searchform-5c39e78d857ac6.22803807" placeholder="Search this website &#x2026;" /><input type="submit" value="Search" /></form></div></section>
+</div><div class="widget-area footer-widgets-3 footer-widget-area"><section id="text-56" class="widget widget_text"><div class="widget-wrap"><h3 class="widgettitle widget-title">I Need Help To&#8230;</h3>
+			<div class="textwidget"><p style="text-align: left;">
+<a href="https://www.pastormentor.com/need-help-find-a-mentor/">Find a Mentor</a><br>
+<a href="https://www.pastormentor.com/outreach-evangelism/">Do Outreach and Evangelism</a><br>
+<a href="https://www.pastormentor.com/need-help-evaluate-church/">Evaluate my Church</a><br>
+<a href="https://www.pastormentor.com/need-help-set-goals/">Set Goals</a><br>
+<a href="https://www.pastormentor.com/need-help-church-growth/">See Church Growth</a><br>
+<a href="https://www.pastormentor.com/need-help-preach-strategically/">Preach Strategically</a><br>
+</p><a href="https://www.pastormentor.com/need-help-keep-people-coming/">Keep People Coming</a><br>
+<a href="https://www.pastormentor.com/need-help-improve-weekend-services/">Improve Weekend Services</a><br>
+<a href="https://www.pastormentor.com/need-help-raise-spiritual-maturity/">Raise Spiritual Maturity</a><br>
+<a href="https://www.pastormentor.com/need-help-pray-like-pastor/">Pray Like a Pastor</a><br>
+<a href="https://www.pastormentor.com/need-help-develop-systems/">Develop New Systems</a><br>
+<a href="https://www.pastormentor.com/need-help-better-leader/">Be a Better Leader</a><br>
+<a href="https://www.pastormentor.com/need-help-hold-church-campaign/">Hold a Church Campaign</a><br></div>
+		</div></section>
+</div></div></div><footer class="site-footer" itemscope itemtype="https://schema.org/WPFooter"><div class="wrap"><p>©2018 PastorMentor </p><nav class="nav-secondary" aria-label="Secondary" itemscope itemtype="https://schema.org/SiteNavigationElement"><div class="wrap"><ul id="menu-secondary-menu" class="menu genesis-nav-menu menu-secondary js-superfish"><li id="menu-item-20370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20370"><a href="https://www.pastormentor.com/contact-2/" itemprop="url"><span itemprop="name">Contact</span></a></li>
+<li id="menu-item-18070" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18070"><a href="https://www.pastormentor.com/order-info/" itemprop="url"><span itemprop="name">Order Info</span></a></li>
+<li id="menu-item-18092" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18092"><a href="https://www.pastormentor.com/privacy/" itemprop="url"><span itemprop="name">Privacy</span></a></li>
+<li id="menu-item-18069" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18069"><a href="https://www.pastormentor.com/terms-conditions/" itemprop="url"><span itemprop="name">Terms and Conditions</span></a></li>
+</ul></div></nav></div></footer></div>    <script language="javascript" type="text/javascript">
+		<!--
+		function imposeMaxLength(Object, MaxLen)
+		{
+  		return (Object.value.length <= MaxLen);
+		}
+		-->
+	</script>
+    <!--footer scripts--><div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script><script type='text/javascript'>jQuery(document).ready(function($) {$(".flexslider").flexslider({controlsContainer: "#genesis-responsive-slider",animation: "slide",directionNav: 1,controlNav: 0,animationDuration: 800,slideshowSpeed: 4000    });  });</script><script type='text/javascript' src='//www.pastormentor.com/wp-content/mu-plugins/synthesis/library/bbpress/templates/default/js/editor.js?ver=2.5.13-6410'></script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-content/mu-plugins/synthesis/library/anti-spam/assets/js/premise-zero-spam.js?ver=0.1.0'></script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-content/mu-plugins/synthesis/library/lms-navigation-widget/assets/js/lms-navigation-module.js?ver=2.3.4'></script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-includes/js/hoverIntent.min.js?ver=1.8.1'></script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-content/themes/genesis/lib/js/menu/superfish.min.js?ver=1.7.5'></script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-content/themes/genesis/lib/js/menu/superfish.args.min.js?ver=2.6.1'></script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-content/themes/genesis/lib/js/skip-links.min.js?ver=2.6.1'></script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-content/themes/digital-pro/js/fadeup.js?ver=1.0.0'></script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-content/themes/digital-pro/js/site-header.js?ver=1.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var DigitalL10n = {"mainMenu":"Menu","subMenu":"Menu"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-content/themes/digital-pro/js/responsive-menu.js?ver=1.0.0'></script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-includes/js/jquery/ui/tabs.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-content/mu-plugins/synthesis/library/genesis-responsive-slider/js/jquery.flexslider.js?ver=0.9.5'></script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-content/themes/digital-pro/js/jquery.scrollTo.min.js?ver=2.1.2'></script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-content/themes/digital-pro/js/jquery.localScroll.min.js?ver=2.0.0'></script>
+<script type='text/javascript' src='//www.pastormentor.com/wp-includes/js/wp-embed.min.js?ver=4.8.7'></script>
+<script type="text/javascript">jQuery(document).ready(function($) { $(".ui-tabs").tabs(); });</script>
+</body></html>

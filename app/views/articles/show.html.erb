@@ -8,8 +8,9 @@
           <li>Created by:</li>
           <li><%= link_to gravatar_for(@article.user), user_path(@article.user) %></li>
           <li class="article-title">
-            <%= link_to @article.user.username, user_path(@article.user) %>
+ <%= link_to @article.user.username, user_path(@article.user) %>
           </li>
+  
           <li><small><%= pluralize(@article.user.articles.count, "article") if @article.user.articles %></small></li>
         </div>
       </div>
@@ -17,18 +18,49 @@
   <% end %>
   <h4 class="center description"><strong>Description:</strong></h4>
   <hr>
+<div class="col-md-9">
+  <%= image_tag(@article.picture_url, width: '100%') if @article.picture.present? %>
+  
+ <p>
   <%= simple_format(@article.description) %>
+  </p>
+  
+ 
+  <div>
+ 
+<strong>About Author: </strong><%= @article.user.userbio %>
+   
+  </div>
+ 
+  
+              
+  <h3>Comments</h3>
+  <% @comments.each do |comment| %>
+  <div>
+    <strong><%= comment.author_name %></strong>
+    <br>
+    <p><%= comment.body %></p>
+    <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+  </div>
+  <% end %>
+  
+  <%= render partial: 'comments/form', locals: { comment: @comment } %>
+ 
+  
   <% if @article.categories.any? %>
     <p>Categories: <%= render @article.categories %></p>
   <% end %>
   <div class="article-actions">
-    <% if logged_in? && (current_user == @article.user || current_user.admin?) %>
+    <% if logged_in? && (current_user == @article.user) %>
       <%= link_to "Edit this article", edit_article_path(@article), class: "btn btn-xs btn-primary" %> 
       <%= link_to "Delete this article", article_path(@article), method: :delete, 
                                           data: { confirm: "Are you sure you want to delete this article?" }, 
                                           class: "btn btn-xs btn-danger" %>
+      <%= link_to "View all articles", articles_path, class: "btn btn-xs btn-success" %>
     <% end %>
-    <%= link_to "View all articles", articles_path, class: "btn btn-xs btn-success" %>
+ 
   </div>
 </div>
 <%= link_to 'Back', articles_path %>
+
+
