@@ -24,8 +24,7 @@ production:
   <<: *default
   adapter: postgresql
   database: db/production.sqlite3
-  username: ektigah@gmail.com
-  password: <%= ENV['Kwaku84,'] %>
+
 
 
   
