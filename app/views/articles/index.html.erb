@@ -1,26 +1,55 @@
 <h1>Listing all articles</h1>
 
   <% @articles.each do |article| %>
-<p>
-  
-</p>
 <div class="row">
   <div class="col-md-6">
+
+   
+     <header class="entry-header"><p class="entry-meta"><span class="entry-author" itemprop="author" itemscope itemtype="https://schema.org/Person"><a href="https://rubyagain-ektigah465832.codeanyapp.com/" class="entry-author-link" itemprop="url" rel="author">
+          
+     
+     <span class="entry-author-name" itemprop="name"> 
+   <%= article.user.username %>
+     </span>
+     </a>
+     </span> 
+       </p>
+       <h2 class="entry-title" itemprop="headline">
+          <a class="entry-title-link" rel="bookmark" href="https://www.pastormentor.com/build-momentum-winter/">
+          <%= article.title %></a></h2>
+    </header>
+    <div class="entry-content" itemprop="text"><div class="share-before share-outlined share-medium" id="share-before-23208"><div class="facebook" id="facebook-before-23208" data-url="https://rubyagain-ektigah465832.codeanyapp.com/" data-urlalt="https://www.pastormentor.com/?p=23208" data-text="How to Build Momentum in your Church in the Dead of Winter" data-title="Share" data-reader="Share on Facebook" data-count="%s shares on Facebook"></div>
+      <div class="twitter" id="twitter-before-23208" data-url="https://rubyagain-ektigah465832.codeanyapp.com/" data-urlalt="https://www.pastormentor.com/?p=23208" data-text="How to Build Momentum in your Church in the Dead of Winter" data-title="Tweet" data-reader="Tweet this" data-count="%s Tweets"></div><div class="linkedin" id="linkedin-before-23208" data-url="https://www.pastormentor.com/build-momentum-winter/" data-urlalt="https://www.pastormentor.com/?p=23208" data-text="How to Build Momentum in your Church in the Dead of Winter" data-title="Share" data-reader="Share on LinkedIn" data-count="%s shares on LinkedIn"></div></div>
+
+      <p>  <%= article.description %></p>
+</div>
+  
+  
+  
+  
     <p>
-   <h2><%= article.title %></h2>
-    </p>
-  <%= article.description %>
-  <p>
-  <%= link_to 'Edit', edit_article_path(article), class: "btn btn-xs btn-primary" %>
-  <%= link_to 'Show', article_path(article), class: "btn btn-xs btn-primary" %>
-  <%= link_to 'Delete', article_path(article), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-xs btn-danger" %>
-   </p>
+    
+
+  <% if logged_in? %>
+    <%= link_to 'Edit', edit_article_path(article), class: "btn btn-xs btn-primary" %>
+    <%= link_to 'Show', article_path(article), class: "btn btn-xs btn-primary" %>
+    <%= link_to 'Delete', article_path(article), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-xs btn-danger" %>
+  <% end %>
+  
+  </p>
+
+  
   </div>
+  <p>
+    
+
   <div class="col-md-6">
   <%= image_tag article.picture_url, width: '100%' if article.picture.present? %>
 
 
   </div>
+    </p>
+<br>
 </div>
  <% end %>
 
