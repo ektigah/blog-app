@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
  
-  resources :comments
+  
   root 'welcome#home'
   get 'about', to: 'welcome#about'
+  get 'contact', to: 'welcome#contact'
   
   resources :articles
+  resources :comments
   
   get 'signup', to: "users#new"
   resources :users, except: [:new]

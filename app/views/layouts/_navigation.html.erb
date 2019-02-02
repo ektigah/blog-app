@@ -1,89 +1,134 @@
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    <meta charset="utf-8">
-    <link rel="dns-prefetch" href="//s3.envato.com" />
 
-    
-   <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>My E Blog</title>
-    <meta name="description" content="&amp;lt;h2 id=&amp;quot;item-description__blackbeard-elegant-blog-template&amp;quot;&amp;gt;Blackbeard &amp;amp;#8211...">
-    <meta name="robots" content="noindex, follow" />
-    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
 
-    <link rel="stylesheet" media="all" href="https://public-assets.envato-static.com/assets/market/core/index-8e93c70d270b58225c21a4537df548fb146a99db89647fc393d5eaddc2bf0f5c.css" />
-    <link rel="stylesheet" media="all" href="https://public-assets.envato-static.com/assets/market/pages/preview/index-004d35cdd5d555cdd3e956d1b916825642de06529f0fe91fd9f390813761d2fc.css" />
-
-      <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="https://public-assets.envato-static.com/icons/themeforest.net/apple-touch-icon-72x72-precomposed.png" sizes="72x72" />
-  <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="https://public-assets.envato-static.com/icons/themeforest.net/apple-touch-icon-114x114-precomposed.png" sizes="114x114" />
-  <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="https://public-assets.envato-static.com/icons/themeforest.net/apple-touch-icon-144x144-precomposed.png" sizes="144x144" />
-<link rel="apple-touch-icon-precomposed" type="image/x-icon" href="https://public-assets.envato-static.com/icons/themeforest.net/apple-touch-icon-precomposed.png" />
-
+<header>
   
-  </head>
-  <body class="full-screen-preview">
-    
-<div class="preview__header" data-view="ctaHeader">
-
-  <div >
-     <%= link_to "E BLOG APP", root_path, class: "navbar-brand", id: "logo" %>
-  </div>
-
+      <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
   
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><%= link_to "Articles", articles_path %></li>
-        <li><%= link_to "Users", users_path %></li>
-        <% if logged_in? %>
+  
+  
+		<div class="row align-middle sayit_logo_left">
+			<div class="col sayit_logo_container col-2">
+				<div class="sayit_logo_cont">
+					<a class="sayit_image_logo sayit_retina" href="index.html"></a>
+				</div>
+
+				<div class="sayit_menu_mobile_trigger">
+					<div class="sayit_trigger_container">
+						<div class="sayit_trigger_inner">
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col sayit_menu_container col-8">
+				<div class="sayit_menu_cont">
+
+					<div class="sayit_menu_inner">
+						<ul class="sayit_menu sayit_header_menu">
+							<!-- Articles List Link-->
+              <li class="menu-item"><%= link_to "Articles", articles_path %></li>
+
+              <% if logged_in? %>
           
-              <li><%= link_to "New Article", new_article_path %></li>
+              <li class="menu-item"><%= link_to "New Article", new_article_path %></li>
    
-        <% end %>
-        
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><%= link_to "All Categories", categories_path %></li>
-            <% Category.all.each do |category| %>
-              <li><%= link_to category.name, category_path(category) %></li>
-            <% end %>              
-            <% if logged_in? %>
-              <li role="separator" class="divider"></li>
-              <li><%= link_to "Create New Category", new_category_path %></li>
-            <% end %>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <% if logged_in? %>
-          <li><%= link_to "Log out", logout_path, method: :delete %></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Your Profile <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><%= link_to "Edit your profile", edit_user_path(current_user) %></li>
-              <li><%= link_to "View your profile", user_path(current_user) %></li>
+              <% end %>
+              
+							<!-- User Link -->
+							<li class="menu-item"><%= link_to "Users", users_path %></li>
+             
+           
+            							<!-- Categories Link -->
+							<li class="menu-item-has-children menu-item">
+                <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>-->
+								<a href="#">Categories</a> 
+
+								<ul class="sub-menu">
+                  <% Category.all.each do |category| %>
+									<li class="menu-item"><%= link_to category.name, category_path(category) %></li>
+                  <% end %>
+                  <% if logged_in? %>
+									<li class="menu-item"><%= link_to "Create New Category", new_category_path %></li>
+                  <% end %>
+								</ul>
+							</li>
+              <li class="menu-item"></li>
+              
+                  <!--
+              <form class="navbar-form navbar-left">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+-->
+              
             </ul>
-          </li>
-        <% else %>
-          <li><%= link_to "Log in", login_path %></li>
-          <li><%= link_to "Sign up", signup_path %></li>
-        <% end %>
-      </ul>
-    </div><!-- /.navbar-collapse -->
- 
-  
-</div>
+            
+            
+          <ul class="sayit_menu sayit_header_menu">
+             <% if logged_in? %>
+                       
+              <li class="menu-item"><%= link_to "Log out", logout_path, method: :delete %></li>
+            <li class="menu-item-has-children menu-item">
+                <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>-->
+								<a href="#">Your Profile</a> 
 
+								<ul class="sub-menu">        
+									<li class="menu-item"><%= link_to "Edit your profile", edit_user_path(current_user) %></li>
+                  <li class="menu-item"><%= link_to "View your profile", user_path(current_user) %></li>
+            
+              
+                  
+								</ul>
+            </li>
+                </ul>
+            
+               <% else %>      
+<ul class="sayit_menu sayit_header_menu">
+                   <li class="menu-item"><%= link_to "Log in", login_path %></li>    
+      
+                   <li class="menu-item"><%= link_to "Sign up", signup_path %></li>
+            </ul>    
+						  <% end %>
+         
+    
+					</div>
+				</div>
+			</div>
+<!-- Search button -->
+			<div class="col sayit_header_socials_and_search_container col-2 sayit_text_align_right">
+				<div class="sayit_header_socials">
+					<a class="sayit_footer_social_button sayit_facebook" href="https://www.facebook.com/"><i class="icon-facebook"></i></a>
+					<a class="sayit_footer_social_button sayit_twitter" href="https://twitter.com/"><i class="icon-twitter"></i></a>
+					<a class="sayit_footer_social_button sayit_linkedin" href="https://www.linkedin.com/"><i class="icon-linkedin"></i></a>
+				</div>
 
+				<div class="sayit_header_search_container">
+					<a class="sayit_header_search_button" href="javascript:void(0)"><i class="icon-search"></i></a>
 
+					<div class="sayit_header_search_popup">
+						<div class="sayit_header_search_content_cont">
+							<form name="header_search_form" id="header_search_form" class="sayit_search_form" method="get">
+								<span class="sayit_icon_search"><i class="fa fa-search"></i></span>
+								<input type="text" name="s" placeholder="Search" title="Search the site..." class="sayit_field_search" form="header_search_form">
+								<div class="clear"></div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+      
+      
+		</div>
 
-
-</body></html>
-
-  
+	</header>

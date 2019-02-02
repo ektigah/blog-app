@@ -1,32 +1,41 @@
-<h1>Listing all articles</h1>
+
+<div align="center"><%= render "layouts/titleblock_art" %>	</div>	
+
+<br>
 
   <% @articles.each do |article| %>
-<div class="row">
-  <div class="col-md-6">
+					<div class="row gutters">
+						<div class="col col-6 sayit_pr_15">
+              
+              
+							<h2 class="sayit_mb_20"><%= article.title %></h2>
+			      <strong> Author: </strong> <%= article.user.username %> 
+              <br>
+              <p class="sayit_mb_40"><%= article.description %></p>
 
-   
-     <header class="entry-header"><p class="entry-meta"><span class="entry-author" itemprop="author" itemscope itemtype="https://schema.org/Person"><a href="https://rubyagain-ektigah465832.codeanyapp.com/" class="entry-author-link" itemprop="url" rel="author">
-          
-     
-     <span class="entry-author-name" itemprop="name"> 
-   <%= article.user.username %>
-     </span>
-     </a>
-     </span> 
-       </p>
-       <h2 class="entry-title" itemprop="headline">
-          <a class="entry-title-link" rel="bookmark" href="https://www.pastormentor.com/build-momentum-winter/">
-          <%= article.title %></a></h2>
-    </header>
-    <div class="entry-content" itemprop="text"><div class="share-before share-outlined share-medium" id="share-before-23208"><div class="facebook" id="facebook-before-23208" data-url="https://rubyagain-ektigah465832.codeanyapp.com/" data-urlalt="https://www.pastormentor.com/?p=23208" data-text="How to Build Momentum in your Church in the Dead of Winter" data-title="Share" data-reader="Share on Facebook" data-count="%s shares on Facebook"></div>
-      <div class="twitter" id="twitter-before-23208" data-url="https://rubyagain-ektigah465832.codeanyapp.com/" data-urlalt="https://www.pastormentor.com/?p=23208" data-text="How to Build Momentum in your Church in the Dead of Winter" data-title="Tweet" data-reader="Tweet this" data-count="%s Tweets"></div><div class="linkedin" id="linkedin-before-23208" data-url="https://www.pastormentor.com/build-momentum-winter/" data-urlalt="https://www.pastormentor.com/?p=23208" data-text="How to Build Momentum in your Church in the Dead of Winter" data-title="Share" data-reader="Share on LinkedIn" data-count="%s shares on LinkedIn"></div></div>
+							<div class="sayit_popup_button_widget">
+								<div class="sayit_widget_container sayit_mb_50">
+									<div class="sayit_popup_button_wrapper">
+										<div class="sayit_popup_button_popup">
+											<div class="sayit_popup_button_popup_close"></div>
 
-      <p>  <%= article.description %></p>
-</div>
-  
-  
-  
-  
+											<div class="sayit_popup_button_content_cont">
+	                      <%= article.description %>
+                      </div>
+										</div>
+
+										<a class="sayit_popup_button" href="javascript:void(0)">Read More</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col col-6 sayit_pl_15 sayit_md_padding_0 sayit_md_mb_40">
+							 <%= image_tag article.picture_url, width: '100%' if article.picture.present? %>
+						</div>
+					</div>
+</p>
+
     <p>
     
 
@@ -35,22 +44,20 @@
     <%= link_to 'Show', article_path(article), class: "btn btn-xs btn-primary" %>
     <%= link_to 'Delete', article_path(article), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-xs btn-danger" %>
   <% end %>
-  
-  </p>
-
-  
-  </div>
-  <p>
-    
-
-  <div class="col-md-6">
-  <%= image_tag article.picture_url, width: '100%' if article.picture.present? %>
+      
+<hr>
 
 
-  </div>
-    </p>
-<br>
-</div>
  <% end %>
 
-     
+
+
+
+
+
+
+
+
+
+
+
