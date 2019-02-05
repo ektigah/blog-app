@@ -4,8 +4,8 @@
 <head>
   
     <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
 
   
 	<title>E Blog</title>
@@ -14,14 +14,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-  
-  	<!--<link href="http://pixel-mafia.com/demo/html-templates/sayit/css/kube.css" rel="stylesheet">
-  	<link href="http://pixel-mafia.com/demo/html-templates/sayit/css/pm-socials.css" rel="stylesheet">
-  	<link href="http://pixel-mafia.com/demo/html-templates/sayit/css/font-awesome.min.css" rel="stylesheet">
-  	<link href="http://pixel-mafia.com/demo/html-templates/sayit/css/style.css" rel="stylesheet"> -->
-
-
- 
+     <%= stylesheet_link_tag    'application', media: 'all' %>
 </head>
 
 <body class="sayit_js_bg_color" data-bgcolor="#ffffff">
@@ -51,6 +44,6 @@
 
 
 
-
+    <%= javascript_include_tag 'application'%>
 </body>
 </html>

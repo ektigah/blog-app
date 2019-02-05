@@ -1,0 +1,19 @@
+current directory: /home/cabox/workspace/rails_projects/blog-app-elisha/vendor/ruby/2.5.0/gems/bcrypt-3.1.12/ext/mri
+/home/cabox/.rbenv/versions/2.5.3/bin/ruby -r ./siteconf20190202-16894-be0qar.rb extconf.rb
+creating Makefile
+
+current directory: /home/cabox/workspace/rails_projects/blog-app-elisha/vendor/ruby/2.5.0/gems/bcrypt-3.1.12/ext/mri
+make "DESTDIR=" clean
+
+current directory: /home/cabox/workspace/rails_projects/blog-app-elisha/vendor/ruby/2.5.0/gems/bcrypt-3.1.12/ext/mri
+make "DESTDIR="
+compiling bcrypt_ext.c
+compiling crypt.c
+compiling crypt_blowfish.c
+compiling crypt_gensalt.c
+compiling wrapper.c
+linking shared-object bcrypt_ext.so
+
+current directory: /home/cabox/workspace/rails_projects/blog-app-elisha/vendor/ruby/2.5.0/gems/bcrypt-3.1.12/ext/mri
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20190202-16894-13u9040

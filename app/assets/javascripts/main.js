@@ -3,7 +3,7 @@
 ////////////////////////
 //// Document Ready ////
 ////////////////////////
-jQuery(document).ready(function () {
+jQuery(document).on('ready page:load', function () {
     sayit_countdown();
 	
     jQuery('.sayit_header_menu .sub-menu').wrap('<div class="sayit_sub_menu_wrapper"></div>');

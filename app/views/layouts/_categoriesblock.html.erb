@@ -18,7 +18,7 @@
 								<div class="sayit_widget_container">
 									<div class="sayit_info_box_item view_type_3">
 										<a href="places_usa.html">
-											<div class="sayit_info_box_item_inner sayit_js_bg_image sayit_parallax_mode sayit_mobile_height_380" data-tilt data-tilt-easing="linear" data-tilt-max="20">
+											<div class="sayit_info_box_item_inner sayit_js_bg_image sayit_parallax_mode sayit_mobile_height_380" data-tilt data-tilt-easing="linear" data-src="<%= asset_path ("img_1") %>" data-tilt-max="20">
                         <%= image_tag ("img_1") %>
 												<div class="sayit_inbo_box_content sayit_no_description">
 													<div class="sayit_info_box_title sayit_text_align_center">
@@ -43,7 +43,7 @@
 								<div class="sayit_widget_container">
 									<div class="sayit_info_box_item view_type_3">
 										<a href="places_india.html">
-											<div class="sayit_info_box_item_inner sayit_js_bg_image sayit_parallax_mode sayit_mobile_height_380" data-src="img/clipart/info_box/info-2.jpg" data-tilt data-tilt-easing="linear" data-tilt-max="20">
+											<div class="sayit_info_box_item_inner sayit_js_bg_image sayit_parallax_mode sayit_mobile_height_380" data-src="<%= asset_path ("img_2") %>" data-tilt data-tilt-easing="linear" data-tilt-max="20">
 												<%= image_tag ("img_2") %>
                         <div class="sayit_inbo_box_content sayit_no_description">
                           <div class="sayit_info_box_title sayit_text_align_center">
@@ -67,7 +67,7 @@
 								<div class="sayit_widget_container">
 									<div class="sayit_info_box_item view_type_3">
 										<a href="places_germany.html">
-											<div class="sayit_info_box_item_inner sayit_js_bg_image sayit_parallax_mode sayit_mobile_height_380" data-src="img/clipart/info_box/info-3.jpg" data-tilt data-tilt-easing="linear" data-tilt-max="20">
+											<div class="sayit_info_box_item_inner sayit_js_bg_image sayit_parallax_mode sayit_mobile_height_380" data-src="<%= asset_path ("img_3") %>" data-tilt data-tilt-easing="linear" data-tilt-max="20">
 												<%= image_tag ("img_3") %>
                         <div class="sayit_inbo_box_content sayit_no_description">
 													<div class="sayit_info_box_title sayit_text_align_center">
@@ -92,7 +92,7 @@
 								<div class="sayit_widget_container">
 									<div class="sayit_info_box_item view_type_3">
 										<a href="places_turkey.html">
-											<div class="sayit_info_box_item_inner sayit_js_bg_image sayit_parallax_mode sayit_mobile_height_380" data-src="img/clipart/info_box/info-4.jpg" data-tilt data-tilt-easing="linear" data-tilt-max="20">
+											<div class="sayit_info_box_item_inner sayit_js_bg_image sayit_parallax_mode sayit_mobile_height_380" data-src="<%= asset_path ("img_1") %>" data-tilt data-tilt-easing="linear" data-tilt-max="20">
 												<%= image_tag ("img_1") %>
                         <div class="sayit_inbo_box_content sayit_no_description">
 													<div class="sayit_info_box_title sayit_text_align_center">
@@ -117,7 +117,7 @@
 								<div class="sayit_widget_container">
 									<div class="sayit_info_box_item view_type_3">
 										<a href="places_uk.html">
-											<div class="sayit_info_box_item_inner sayit_js_bg_image sayit_parallax_mode sayit_mobile_height_380" data-src="img/clipart/info_box/info-5.jpg" data-tilt data-tilt-easing="linear" data-tilt-max="20">
+											<div class="sayit_info_box_item_inner sayit_js_bg_image sayit_parallax_mode sayit_mobile_height_380" data-src="<%= asset_path ("img_2") %>" data-tilt data-tilt-easing="linear" data-tilt-max="20">
 												<%= image_tag ("img_2") %>
                         <div class="sayit_inbo_box_content sayit_no_description">
 													<div class="sayit_info_box_title sayit_text_align_center">
@@ -142,14 +142,14 @@
 								<div class="sayit_widget_container">
 									<div class="sayit_info_box_item view_type_3">
 										<a href="places_france.html">
-											<div class="sayit_info_box_item_inner sayit_js_bg_image sayit_parallax_mode sayit_mobile_height_380" data-src="img/clipart/info_box/info-6.jpg" data-tilt data-tilt-easing="linear" data-tilt-max="20">
+											<div class="sayit_info_box_item_inner sayit_js_bg_image sayit_parallax_mode sayit_mobile_height_380" data-src="<%= asset_path ("img_3") %>" data-tilt data-tilt-easing="linear" data-tilt-max="20">
 												<%= image_tag ("img_3") %>
                         <div class="sayit_inbo_box_content sayit_no_description">
 													<div class="sayit_info_box_title sayit_text_align_center">
 														<h3 class="sayit_js_color" data-color="#ffffff">
-                                <% if  Category.find(6).present? %>
-                                <%= link_to Category.find(6).name %>
-                                <% end %>
+                                <% #if  Category.find(6).present? %>
+                                <%#= link_to Category.find(6).name %>
+                                <%# end %>
                             </h3>
 													</div>
 												</div>
