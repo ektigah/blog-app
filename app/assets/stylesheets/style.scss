@@ -283,6 +283,7 @@ a {
 
 form {
     margin: 0;
+    margin-left: 10rem;
 }
 
 input[type="text"],
@@ -1392,7 +1393,7 @@ h6 {
 }
 
 p {
-    margin: 20px 0;
+    margin: 20px 40px;
 }
 
 p:empty {
@@ -3701,7 +3702,7 @@ a .innertitle {
 .sayit_featured_posts {
     font-size: 0;
     line-height: 0;
-    margin-left: -30px;
+    margin-left: 20px;
 }
 
 .single-post .sayit_featured_posts {
