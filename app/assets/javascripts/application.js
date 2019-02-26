@@ -14,5 +14,6 @@
 //= require jquery
 //= require vanilla-tilt.min
 //= require main
+//= require bootstrap
 
 
