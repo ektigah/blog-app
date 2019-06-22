@@ -297,7 +297,8 @@ input[type="url"],
 textarea {
     vertical-align: top;
     padding: 5px 15px 7px;
-    background: transparent;
+    /*background: transparent; */
+    background: white;
     border: solid 1px #ececec;
     border-radius: 3px;
     width: 100%;
@@ -714,7 +715,7 @@ header .sayit_menu li a {
 
 .sayit_transparent_header header .sayit_menu li a,
 .sayit_fimage_position_over header .sayit_menu li a {
-     color: #ffffff;
+     color: black;
 }
 
 .sayit_transparent_header header.sayit_sticky_menu .sayit_menu > li > a,
@@ -885,7 +886,7 @@ footer .sayit_image_logo {
 header .sayit_image_logo.sayit_retina,
 footer .sayit_image_logo.sayit_retina {
     width: 74px;
-    height: 36px;
+    height: 20px;
     background-size: 74px 36px;
 }
 
@@ -4332,7 +4333,7 @@ body .nav-links a:hover,
 .sayit_sticky_menu .sayit_additional_sidebar_trigger.active,
 .sayit_transparent_header .sayit_additional_sidebar_trigger.active,
 .sayit_fimage_position_over .sayit_additional_sidebar_trigger.active {
-    color: #d8ba99;
+   color: blue;
 }
 
 .sayit_menu li.current-menu-item > a,
@@ -4385,7 +4386,7 @@ header.sayit_sticky_menu .sayit_header_socials .sayit_footer_social_button:hover
 header.sayit_sticky_menu .sayit_header_search_button:hover,
 .sayit_social_icons_widget a:hover,
 body .sayit_flip_box_widget .sayit_back_button.sayit_button_light_type {
-    background: #d8ba99;
+    background: none;
 }
 
 /* --------------------- */

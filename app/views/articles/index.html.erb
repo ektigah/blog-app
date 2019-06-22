@@ -31,20 +31,25 @@
 						</div>
 
 						<div class="col col-6 sayit_pl_15 sayit_md_padding_0 sayit_md_mb_40">
-							 <%= image_tag article.picture_url, width: '100%' if article.picture.present? %>
+							 <% if article.picture.present? %>
+              <%= image_tag article.picture, width: '100%'  %>
+             
+               <% end %>
 						</div>
 					</div>
 </p>
 
     <p>
     
+<div>
+  
 
   <% if logged_in? %>
-    <%= link_to 'Edit', edit_article_path(article), class: "btn btn-xs btn-primary" %>
+      <%= link_to 'Edit', edit_article_path(article), class: "btn btn-xs btn-primary" %> 
     <%= link_to 'Show', article_path(article), class: "btn btn-xs btn-primary" %>
-    <%= link_to 'Delete', article_path(article), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-xs btn-danger" %>
+     <%= button_to 'Delete', article_path(article), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-xs btn-danger" %>
   <% end %>
-      
+ </div>     
 <hr>
 
 

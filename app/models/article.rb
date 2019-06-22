@@ -6,5 +6,5 @@ class Article < ApplicationRecord
   validates :title, presence: true, length: { minimum: 3, maximum: 50 }
   validates :description, presence: true, length: { minimum: 10, maximum: 1200 }
   validates :user_id, presence: true
-  mount_uploader :picture, PictureUploader
+  has_one_attached :picture
 end

@@ -12,6 +12,7 @@
 //
 
 //= require jquery
+//= require bootstrap-sprockets
 //= require vanilla-tilt.min
 //= require main
 //= require bootstrap

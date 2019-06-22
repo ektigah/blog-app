@@ -1,4 +1,4 @@
-/*
+ /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
@@ -8,11 +8,57 @@
  * You're free to add application-wide styles to this file and they'll appear at the bottom of the
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
+ * It is generally better to create a new file per style scope. @import 'foundation-icon';
  *
  */
  //= require_tree .
  //= require_self
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 @import 'font-awesome';
-@import 'foundation-icons';
+
+@import 'kube';
+@import 'style';
+
+form.button_to {
+  display: inline;
+  margin: 0;
+ 
+  
+      padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+   border: 2px solid;
+     
+  background-color: #d9534f;
+    border-color: #d43f3a;
+  
+  div { display: inline; }
+  input[type=submit] {
+    margin: 0;
+    padding: 0;
+  
+    background: none;
+   text-transform: inherit;
+ 
+    cursor: pointer;
+    color: #FFF;
+  }
+}
+
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+  margin-top: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
