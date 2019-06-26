@@ -1,68 +1,48 @@
-
 <div align="center"><%= render "layouts/titleblock_art" %>	</div>
-
 <br>
-
   <% @articles.each do |article| %>
-					<div class="row gutters">
-						<div class="col col-6 sayit_pr_15">
-              
-              
-							<h2 class="sayit_mb_20"><%= article.title %></h2>
-			      <strong> Author: </strong> <%= article.user.username %> 
-              <br>
-              <p class="sayit_mb_40"><%= article.description %></p>
+<div class="row gutters">
+  <div class="col col-6 sayit_pr_15">
+    <h2 class="sayit_mb_20">
+      <%= article.title %>
+    </h2>
+    <strong> Author: </strong>
+    <%= article.user.username %>
+      <br>
+      <p class="sayit_mb_40">
+        <%= truncate(article.description, length: 500) %>
+      </p>
 
-							<div class="sayit_popup_button_widget">
-								<div class="sayit_widget_container sayit_mb_50">
-									<div class="sayit_popup_button_wrapper">
-										<div class="sayit_popup_button_popup">
-											<div class="sayit_popup_button_popup_close"></div>
+      <div class="sayit_popup_button_widget">
+        <div class="sayit_widget_container sayit_mb_50">
+          <div class="sayit_popup_button_wrapper">
+            <div class="sayit_popup_button_popup">
+              <div class="sayit_popup_button_popup_close"></div>
+              <div class="sayit_popup_button_content_cont">
+                <%= article.description%>
+              </div>
+            </div>
+            <a class="sayit_popup_button" href="javascript:void(0)">Read More</a>
+          </div>
+        </div>
+      </div>
+  </div>
 
-											<div class="sayit_popup_button_content_cont">
-	                      <%= article.description %>
-                      </div>
-										</div>
+  <div class="col col-6 sayit_pl_15 sayit_md_padding_0 sayit_md_mb_40">
+    <% if article.picture.present? %>
+      <%= image_tag article.picture, width: '100%'  %>
+        <% end %>
+  </div>
+</div>
 
-										<a class="sayit_popup_button" href="javascript:void(0)">Read More</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col col-6 sayit_pl_15 sayit_md_padding_0 sayit_md_mb_40">
-							 <% if article.picture.present? %>
-              <%= image_tag article.picture, width: '100%'  %>
-             
-               <% end %>
-						</div>
-					</div>
-</p>
-
-    <p>
-    
+<p> 
 <div>
-  
-
   <% if logged_in? %>
-      <%= link_to 'Edit', edit_article_path(article), class: "btn btn-xs btn-primary" %> 
+    <%= link_to 'Edit', edit_article_path(article), class: "btn btn-xs btn-primary" %> 
     <%= link_to 'Show', article_path(article), class: "btn btn-xs btn-primary" %>
-     <%= button_to 'Delete', article_path(article), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-xs btn-danger" %>
+    <%= button_to 'Delete', article_path(article), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-xs btn-danger" %>
   <% end %>
  </div>     
 <hr>
-
-
  <% end %>
-
-
-
-
-
-
-
-
-
-
-
-
+</p>
